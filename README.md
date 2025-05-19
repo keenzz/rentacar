@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RentaCar - Araç Kiralama Platformu
 
-## Getting Started
+![RentaCar Logo](https://rentacar-zeta.vercel.app/logo.png)
 
-First, run the development server:
+## 🚗 Proje Hakkında
+
+RentaCar, kullanıcıların kolayca araç kiralayabilmesini sağlayan modern bir web platformudur. Kullanıcı dostu arayüzü ve zengin özellikleriyle araç kiralama sürecini basitleştirmeyi amaçlamaktadır.
+
+**Demo:** [https://rentacar-zeta.vercel.app](https://rentacar-zeta.vercel.app)
+
+> **Not:** Bu proje bir demo çalışmasıdır. Gerçek bir araç kiralama hizmeti sunmamaktadır.
+
+## ✨ Özellikler
+
+- 🌐 Responsive tasarım (Mobil ve Masaüstü uyumlu)
+- 📱 Mobil cihazlar için alt navigasyon barı
+- 🚙 Detaylı araç listeleme ve arama
+- 📅 Rezervasyon sistemi
+- 🔍 Araç detay sayfaları
+- ℹ️ Bilgilendirme modali
+- 📲 WhatsApp üzerinden iletişim entegrasyonu
+
+## 🛠️ Kullanılan Teknolojiler
+
+- **Frontend/Backend:**
+  - [Next.js 15](https://nextjs.org/) - React framework
+  - [React 19](https://reactjs.org/) - UI kütüphanesi
+  - [TypeScript](https://www.typescriptlang.org/) - Tip güvenli JavaScript
+
+- **Styling:**
+  - [Tailwind CSS 4](https://tailwindcss.com/) - Utility-first CSS framework
+
+- **Deployment:**
+  - [Vercel](https://vercel.com/) - Hosting platformu
+
+## 🚀 Kurulum
+
+Bu projeyi lokal ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+
+1. Repoyu klonlayın:
+
+```bash
+git clone https://github.com/kullaniciadi/rentacar.git
+cd rentacar
+```
+
+2. Bağımlılıkları yükleyin:
+
+```bash
+npm install
+# veya
+yarn install
+```
+
+3. Geliştirme sunucusunu başlatın:
 
 ```bash
 npm run dev
-# or
+# veya
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Tarayıcınızda açın: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📊 Proje Yapısı
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+rentacar/
+├── app/                    # Next.js App Router
+│   ├── components/         # Paylaşılan bileşenler
+│   │   ├── InfoModal.tsx   # Bilgilendirme modali
+│   │   └── MobileBottomNavbar.tsx  # Mobil navigasyon barı
+│   ├── araclar/            # Araçlar sayfaları
+│   │   └── [id]/           # Araç detay sayfası
+│   ├── globals.css         # Global CSS
+│   ├── layout.tsx          # Ana layout
+│   └── page.tsx            # Ana sayfa
+├── public/                 # Statik dosyalar
+├── next.config.ts          # Next.js yapılandırması
+├── package.json            # Proje bağımlılıkları
+└── tsconfig.json           # TypeScript yapılandırması
+```
 
-## Learn More
+## 📱 Ekran Görüntüleri
 
-To learn more about Next.js, take a look at the following resources:
+### Ana Sayfa
+![Ana Sayfa](https://rentacar-zeta.vercel.app/screenshots/anasayfa.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Araç Listesi
+![Araç Listesi](https://rentacar-zeta.vercel.app/screenshots/araclar.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Araç Detay
+![Araç Detay](https://rentacar-zeta.vercel.app/screenshots/arac-detay.png)
 
-## Deploy on Vercel
+### Mobil Görünüm
+![Mobil Görünüm](https://rentacar-zeta.vercel.app/screenshots/mobil.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Vercel Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proje [Vercel](https://vercel.com) üzerinde barındırılmaktadır. Yeni bir deployment yapmak için:
+
+```bash
+vercel
+# veya
+vercel --prod
+```
+
+## 📄 Lisans
+
+Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
+
+## 📞 İletişim
+
+Sorularınız veya geri bildirimleriniz için:
+
+- **WhatsApp:** [0540 100 10 80](https://wa.me/905401001080?text=Merhaba,%20RentaCar%20web%20sitesi%20üzerinden%20bilgi%20almak%20istiyorum.)
+- **E-posta:** info@rentacar.com
+
+---
+
+Geliştirici tarafından ❤️ ile yapılmıştır.
